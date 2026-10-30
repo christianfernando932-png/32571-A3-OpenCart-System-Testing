@@ -134,8 +134,9 @@ For each: the left column highlights the category with its count; every Refine S
 
 | Step | Action / Input | Expected result |
 |---|---|---|
-| 1 | Apple Cinema 30": click Add to Cart with no options | 9 "… required!" errors; cart stays "0 item(s) - $0.00" |
-| 2 | product_id `99999`, `-1`, `abc` | HTTP 404, "Product not found!", no Add to Cart, no error text, Continue returns home |
+| 1 | Open Apple Cinema 30" and click Add to Cart without changing the default values | Five validation errors: Radio, Checkbox, Select, Textarea and File; cart remains empty |
+| 2 | Clear the pre-filled Text, Date, Time and Date & Time fields, then click Add to Cart again | Nine validation errors appear, one for each required option; cart remains empty |
+| 3 | Enter invalid product IDs `99999`, `-1` and `abc` | HTTP 404, "Product not found!", no Add to Cart button, no server error; Continue returns home |
 
 ---
 
