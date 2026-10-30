@@ -25,9 +25,11 @@ Expected result: **28 passed, 2 xfailed**. The 2 xfailed rows are defect D01 (wr
 
 | File | What it is |
 |---|---|
-| `tests/test_tc04_product_search.py` | TC04, 3 scenarios |
-| `tests/test_tc05_category_navigation.py` | TC05, 3 scenarios |
-| `tests/test_tc06_product_details.py` | TC06, 3 scenarios |
+| `test_tc04_product_search.py` | TC04, 3 scenarios |
+| `test_tc05_category_navigation.py` | TC05, 3 scenarios |
+| `test_tc06_product_details.py` | TC06, 3 scenarios |
 | `helpers.py` | Shared selectors and page readers |
-| `conftest.py` | Viewport, timeouts, a screenshot per test in `screenshots/` |
-| `TEST_CASES.md` | Steps and expected results as tables, ready for the report |
+| `conftest.py` | Viewport, timeouts, a screenshot per test |
+| `TEST_CASES.md` | Steps and expected results as tables |
+| `report.html` | Full run, 31 Oct 2026: 28 passed, 2 xfailed |
+| `*.png` | One screenshot per test run (30) |
